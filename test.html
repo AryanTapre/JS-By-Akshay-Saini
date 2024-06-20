@@ -1,0 +1,34 @@
+<html lang="en-Us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Closure example..</title>
+</head>
+<body style="background-color: #414141; color: aliceblue">
+
+    <div class="container">
+        <button id="button" value="click me">ClickMe</button>
+    </div>
+</body>
+<script>
+
+    const outer = () => {
+        let val = 0;
+        return () => {
+            return ++val;
+        }
+    }
+
+    const data = outer();
+
+    const p = document.createElement("p");
+    document.body.appendChild(p);
+
+    document.getElementById('button').addEventListener("click",function (){
+            p.innerText = ` button clicked ${data()} times...`;
+    },false);
+
+</script>
+</html>
