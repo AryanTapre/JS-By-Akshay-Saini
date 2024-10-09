@@ -67,4 +67,21 @@ b_reference(); // i can have access to closure of a() though it get executed..
 
 
 
+function bankWithdrawl (amount) {
+    let bankBalance = 1000;
+    function withdrawl() {
+        if(bankBalance > amount) {
+            bankBalance -= amount;
+            return bankBalance;
+        }else {
+            return "insufficient funds";
+        }
+    }
+
+    return withdrawl();
+    
+}
+
+let amt = bankWithdrawl(1000);
+console.log(amt);
 

@@ -84,7 +84,9 @@ let a = 86;
     a = 500;
 }
 
-console.log(a);
+console.log(c);
+// c is accessible outside the block scope because, Variable c has a function scope not scope
+// if data / vraiable scopes crosses each each they can get interfere from outside World!.
 
 
 
