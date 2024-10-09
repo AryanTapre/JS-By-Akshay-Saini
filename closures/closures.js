@@ -10,7 +10,7 @@
             Closure gives access to outer function scope from inner function
 
     
-    TODO:IMPORTANT:
+    TODO:IMPORTANT:7
         Closures are created every time a function is Created..
         they are used in DATA HIDING
 

@@ -3,7 +3,7 @@
         function scope
 
     LET and CONST :
-        if let and const not declared within block they, they are attached to SCRIPT
+        if let and const not declared within block they, they are attached to GLOBAL
         if let and const are declared within block scope, they  are attached to BLOCK
 
         so let and const are BLOCKED scoped..
@@ -19,8 +19,8 @@
         Single line of statement
 
         for e.g if() structure
-         it accept only single line after if() condition
-         If we wish to run multiple lines upon condition being True, There is where we use BLOCK.
+        it accept only single line after if() condition
+        If we wish to run multiple lines upon condition being True, There is where we use BLOCK.
 
 
         As LET and CONST are blocked scope, Anything outside the block scope they will not interfere
