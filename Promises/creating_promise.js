@@ -101,4 +101,13 @@
     .catch(error => console.log(error.message));
   
     
-    
+
+    const HandlingPromises = async () => {
+        const order = await createOrder(myCart);
+        const payiD = await payment(order);
+        const payRef = await orderSummary(payiD);
+        const walletData = await updateWallet(payRef);
+        
+    }
+
+    HandlingPromises();

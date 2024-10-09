@@ -3,11 +3,16 @@
 
 
 class User {
+   
+
     constructor(_url,_status) {
         this.url = _url;
         this.status = _status;
     }
+    
 }
+
+
 
 fetch('https://api.github.com/users/')
 .then((response)=> {
