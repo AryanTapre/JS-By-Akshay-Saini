@@ -34,6 +34,12 @@ let c = function myName() {
     (3) @function that can be returned from a function (closure)
 */    
 
+
+// TODO: function expression vs function statement
+// function statment are hoisted while function expression are not !.
+// in function expression we are storing function into a variable, And the variable is Undefined initially!.
+
+
 // eg.(1)
 var val = function joke() {}
 
@@ -50,4 +56,6 @@ function outer() {
         console.log("i am Inner Function..");
     }
 }
+
+
 

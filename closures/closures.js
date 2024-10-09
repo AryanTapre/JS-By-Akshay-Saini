@@ -1,7 +1,13 @@
 
 /*
     TODO:CLOSURE:
-        In simple terms, A function along with it's Lexical scope together forms a CLOSURE.
+        A closure is a function that has access to outer function's scope, even though after outer  function
+        is returned.
+
+        A closure is formed when an inner function is defined within outer Function.
+        It is essentially a combination of inner function's and outer function's scope
+        which means inner function can access outer functions data/variables even after outer function
+        has finished execution.
 
         definition:
             A closure is just a combination of function bundled together with reference to it's surrounding 
@@ -85,3 +91,15 @@ function bankWithdrawl (amount) {
 let amt = bankWithdrawl(1000);
 console.log(amt);
 
+
+// closures Advance part
+function x() {
+    for(var i=1; i<=5; i++) {
+        let y = i;
+        setTimeout(function() {
+            console.log(y);
+        },y*1000);
+    }
+}
+
+x();
