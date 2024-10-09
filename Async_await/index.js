@@ -11,7 +11,7 @@ const promise2 = new Promise((resolve, reject) => {
     },35000)
 })
 
-clearTimeout()
+clearTimeout();
 
 async function handlePromise() {
     console.log("hello world!!");

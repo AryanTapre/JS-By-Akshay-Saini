@@ -1,22 +1,22 @@
 
 /*
     SPECIAL NOTE:
-     TODO: Whenever an execution context is being created and pushed onto the call Stack of JS RunTime Environment
-      Global Object named "WINDOW" in context of web browser added inside the Global Execution Context
+    TODO: Whenever an execution context is being created and pushed onto the call Stack of JS RunTime Environment
+    Global Object named "WINDOW" in context of web browser added inside the Global Execution Context
 
-     This keyword , A special pointer pointing to Global Object
+    This keyword , A special pointer pointing to Global Object
 
-     Every thing(variables, functions..) that is defined inside execution Context, get Attached to Global Object i.e WINDOW 
-     To Access that use OBJECT.<identifier_name>
-     e.g
+    Every thing(variables, functions..) that is defined inside execution Context, get Attached to Global Object i.e WINDOW 
+    To Access that use OBJECT.<identifier_name>
+    e.g
         var role = "Admin";
         console.log(window.role); or
         console.log(this.role)
 
 
 
-     Along with that We have Something called as LEXICAL SCOPE inside every execution context 
-     Pointing to scope of itself and lexical Environment of it's Parent..
+    Along with that We have Something called as LEXICAL SCOPE inside every execution context 
+    Pointing to scope of itself and lexical Environment of it's Parent..
 
 */
 

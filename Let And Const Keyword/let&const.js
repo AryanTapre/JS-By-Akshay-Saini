@@ -1,14 +1,8 @@
 /*
     LET & CONST ARE HOISTED ??? ==>
-        Yes, Let and const are Hoisted in JS But NOT in similar way of var , functions()  and other Stuff.
-
-        At memory declaration phase, let and const reserved the memory space in different environment And get attached to object named SCRIPT not GLOBAL
-
-        why are they hoisted?
-        because, at memory declaration phase let and const are given special type of value i.e UNDEFINED
-        And every thing is similar that of hoisting with var and functions..
-        The only difference is in Case of LET and CONST is that are attached to Script object NOT global object..
-        
+    No, because Let & Const have temporal dead zone.
+    means, we can't access let ans const before they are decalred.
+    Trying to use a let or const variable before it is declared will result in a ReferenceError.
 */
 
 /*
@@ -32,7 +26,7 @@
 /*
     ERROR TYPES:
         1.syntax error -  Not following standard structure
-          if() {
+        if() {
         
 
         2.Reference error - when you try to use a variable that does'nt exist at all.
@@ -59,9 +53,9 @@
 
 
 // everything before line NO 62 is considered as TEMPORAL DEAD ZONE of variable let a
+console.log(a);x``
 let a = 10;
 
-console.log(a);
 
 
 // everything before line NO 44 is considered as TEMPORAL DEAD ZONE of variable const b
