@@ -24,7 +24,7 @@
     Thread will Execute one task at a TIME
 
     Suppose A heavy operations pushed onto Stack that lot of time to get executed
-    I that case, will Say OUR MAIN THREAD HAS BEEN BLOCKED BY THAT HEAVY FUNCTION
+    In that case, will Say OUR MAIN THREAD HAS BEEN BLOCKED BY THAT HEAVY FUNCTION
 
     To get Rid of it, Create a Async Behaviour of heavy Task..
 
