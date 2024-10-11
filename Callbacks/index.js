@@ -49,17 +49,17 @@
     ✅Whenever event is called by interacting with widgets(can be click, hover..) The handler of that event ie. function get pushed onto callStack and then get Executed..
 
 */
-function attachEventListener() {
+// function attachEventListener() {
 
-    let buttonClickCount = 0;
-    document.getElementById("clickme").addEventListener("click", function xyz () {
-        buttonClickCount++;
-        console.log(`button clicked : ${buttonClickCount}`);
-    });
+//     let buttonClickCount = 0;
+//     document.getElementById("clickme").addEventListener("click", function xyz () {
+//         buttonClickCount++;
+//         console.log(`button clicked : ${buttonClickCount}`);
+//     });
 
-}
+// }
 
-attachEventListener();
+// attachEventListener();
 
 
 /* FIXME: Garbage Collection & Remove Event Listeners
@@ -76,3 +76,21 @@ attachEventListener();
     ✅ Listeners 👂 that are Removed are Garbage 🗑️🚮 Collected..
  */
 
+const users = [
+    {firstName:"aryan", lastName:"tapre", age:22},
+    {firstName:"elon", lastName:"musk", age:26},
+    {firstName:"harshad", lastName:"mehta", age:21},
+    {firstName:"donald", lastName:"trump", age:26},
+];
+
+
+// task: get firstname of person having age 26 using reduce function only
+
+const output = users.reduce((acc,obj) => {
+    if(obj.age == 26) {
+        acc.push(obj.firstName)
+    }
+    return acc;
+},[]);
+
+console.log("output is : "+ output);
