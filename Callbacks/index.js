@@ -49,15 +49,15 @@
     ✅Whenever event is called by interacting with widgets(can be click, hover..) The handler of that event ie. function get pushed onto callStack and then get Executed..
 
 */
-// function attachEventListener() {
+function attachEventListener() {
 
-//     let buttonClickCount = 0;
-//     document.getElementById("clickme").addEventListener("click", function xyz () {
-//         buttonClickCount++;
-//         console.log(`button clicked : ${buttonClickCount}`);
-//     });
+    let buttonClickCount = 0;
+    document.getElementById("clickme").addEventListener("click", function xyz () {
+        buttonClickCount++;
+        console.log(`button clicked : ${buttonClickCount}`);
+    });
 
-// }
+}
 
 // attachEventListener();
 
