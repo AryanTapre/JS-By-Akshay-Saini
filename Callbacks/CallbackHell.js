@@ -3,7 +3,7 @@ let cart = ["shoes","t-shirts","pants","laptops","iphone","android phone"];
 
 
 
-//callback hell
+//callback hell hell
 api.createOrder(cart, function () {
     api.proceedToPayment(function() {
         api.orderSummary(function() {
