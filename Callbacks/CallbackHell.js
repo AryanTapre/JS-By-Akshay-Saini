@@ -2,6 +2,7 @@
 let cart = ["shoes","t-shirts","pants","laptops","iphone","android phone"];
 
 
+//TODO: Pyramid of Doom
 
 //callback hell hell
 api.createOrder(cart, function () {
@@ -13,6 +14,9 @@ api.createOrder(cart, function () {
         });
     });
 });
+
+
+
 
 // loosing the control on Each Call back...
 
