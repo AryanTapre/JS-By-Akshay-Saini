@@ -1,6 +1,5 @@
 //"use strict";
 
-
 /**   TODO: In non-strict mode  
 
 --------------------------THIS SUBSITUTION CONCEPT =>
@@ -16,10 +15,8 @@ in the context of regular function:
 
 */
 
-
 function x() {
     console.log(this);
-    
 }
 
 x.call(undefined);

@@ -24,12 +24,24 @@
 // obj.getName();
 
 
-const obj4 = {
-    name: "obj4",
-    getThis:function () {
-        return this;
-    }
-};
+// const obj4 = {
+//     name: "obj4",
+//     getThis:function () {
+//         return this;
+//     }
+// };
 
-console.log(obj4.getThis());
+// console.log(obj4.getThis());
+
+
+const  outer  = () => {
+    const inner = () => {
+        console.log(this);    
+    }
+    inner();
+}
+
+outer();
+
+
 
